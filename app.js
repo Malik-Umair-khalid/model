@@ -18,3 +18,18 @@ function onClosedImagModal(){
     model.style.display = 'block'
     setTimeout(()=>{ modal.style.display = "none"; }, 550)
   }
+
+
+  var fontsize = 16
+  function zoomin() {
+    if(fontsize !== 56){  
+    fontsize += 10
+      document.getElementById('para').style.fontSize = fontsize + 'px'
+    }
+    }
+    function zoomout() {
+        if(fontsize !== 16){  
+        fontsize -= 10
+          document.getElementById('para').style.fontSize = fontsize + 'px'
+        }
+        }
